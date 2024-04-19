@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <!-- aqui va el css -->
+  <link rel="stylesheet" href="styles/indexStyle.css">
+  <!-- El encabezado de la pagina aqui -->
+  <title>UAA | Universidad Autónoma de Aguascalientes</title>
+  <!-- Aqui es el fav icon  -->
+  <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+  <!-- aqui es el link de los iconos  -->
+  <script src="https://kit.fontawesome.com/e53e06906a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- menu pequeño de arriba -->
+  <header class="menuLeft">
+    <nav class="menuP">
+      <a href="#"> CONTINGENCIA COVID-19 </a>
+      <a href="#"> EVENTOS Y CONVENSIONES </a>
+      <a href="#"> MUSEO </a>
+      <a href="#"> BIBLIOTECA </a>
+      <a href="#"> CALENDARIO </a>
+      <a href="#"> DIRECTORIO </a>
+      <a href="#"> CORREO </a>
+      <a href="Loggin.html"> AULA VIRTUAL </a>
+      <a href="#"> PAGO </a>
+    </nav>
+  </header>
+
+  <div class="containerB">
+    <!-- aqui use el form solo con botones, y algunas etiquetas semanticas -->
+    <div class="img1">
+      <img src="src/UAALogo.PNG" alt="UAA Logo" title="UNIVERSIDAD AUTONOMA DE AGUASCALIENTES"
+        style="margin-left: 40px;">
+    </div>
+
+    <div class="btns">
+      <form action="">
+        <input type="button" value="RADIO" class="BotonM" style="background-color: green;">
+        <input type="button" value="TV" class="BotonM" style="background-color: orange;">
+        <input type="button" value="E-SIIMA" class="BotonM" style="background-color: lightsalmon;">
+        <input type="button" value="MENU RAPIDO" class="BotonM" style="background-color: crimson;">
+        <input type="search" name="Buscar" id="Buscar" alt="Buscar" title="Buscar">
+      </form>
+    </div>
+  </div>
+  <!-- aqui va el segundo menu con estilos de css -->
+  <div class="Menu2">
+    <nav class="menu2">
+      <a href="#">UNIVERSIDAD</a>
+      <a href="#">OFERTA EDUCATIVA</a>
+      <a href="#">ASPIRANTES</a>
+      <a href="#">ALUMNOS</a>
+      <a href="#">MOVILIDAD</a>
+      <a href="#">DOCENTES</a>
+      <a href="#">SERVICIOS Y VINCULACION</a>
+      <a href="#">COMUNICACION</a>
+      <a href="#">CONTACTO</a>
+    </nav>
+  </div>
+  <!-- aqui coloque el carruse{} -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="src/Becas.PNG" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="src/podcast.PNG" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="src/Posgrados.PNG" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="src/Gaceta.PNG" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <!-- aqui es donde va insertado el video de youtube -->
+  <div id="ContainerYT">
+    <div id="YT">
+      <iframe width="400" height="200" src="https://www.youtube.com/embed/dnHzaeWIWFM"
+        title="Universidad Autónoma de Aguascalientes" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="Bienvenida">
+      <h3>Bienvenido a la UAA</h3>
+      <p>
+        La UAA es una institución pública, sensible a su entorno social,
+        reconocida a nivel nacional e internacional, gracias al trabajo y
+        desempeño de sus integrantes de alta calidad.
+        Además de formar a profesionistas y ciudadanos con las capacidades
+        técnicas y herramientas indispensables para su éxito en la sociedad
+        actual, la Universidad educa a personas conscientes de sí, de los demás
+        y su entorno para que, mediante el pensamiento científico y el humanismo
+        impacten en el desarrollo integral de su comunidad.
+      </p>
+    </div>
+  </div>
+
+<h3>Noticias</h3>
+  <div id="NoticiasSlider">
+    <div class="noticia">
+      <video autoplay controls src="media/NoticiasUAA.mp4" style="width: 400px; height: 300px;"></video>
+    </div>
+    <div class="Calendario">
+      <caption style="border-bottom: 2px; border-bottom-color: red;">CALENDARIO</caption>
+      <table id="tabla">
+        <td>
+          <tr style="border-bottom: 3px;">
+            <p>16 de septiembre</p>
+          </tr>
+        </td>
+        <button style="background-color: red; border-radius: 7px; height: 20%; border-style: none;">Ir a mas EVENTOS</button>
+      </table>
+    </div>
+  </div>
+
+  <div id="imgSep">
+    <img src="src/Imagenes sep.PNG">
+  </div>
+  <footer>
+    <div class="derecha">
+      <img src="src/UAALogo3.PNG" alt="UAALogo">
+    </div>
+
+
+    <div class="centro" id="icons">
+      <a href="https://www.facebook.com/uaa.mx"> <i class="fa-brands fa-facebook fa-2x fa-beat-fade"
+          style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075; color: white;"></i></a>
+      <a href="https://www.instagram.com/uaa_mx/"><i class="fa-brands fa-instagram fa-2x fa-beat-fade"
+          style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075; color: white;"></i></a>
+      <a href="https://twitter.com/uaa_mx"><i class="fa-brands fa-twitter fa-2x fa-beat-fade"
+          style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075; color: white;"></i></a>
+      <a href="https://www.youtube.com/c/UAAmx1"><i class="fa-brands fa-youtube fa-2x fa-beat-fade"
+          style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075; color: white;"></i></a>
+    </div>
+
+    <div class="izquierdo">
+      <pre style="  color: white; font-size: 15px;">
+          Av. Universidad # 940, Ciudad Universitaria,
+              C.P. 20100, Aguascalientes, Ags. México.
+                       Tel. conmutador: 449 910 74 00
+                                cvargas@correo.uaa.mx
+        </pre>
+    </div>
+  </footer>
+
+  <script src="js/carr_js.js"></script>
+  <script src="js/carrck.js"></script>
+</body>
+
+</html>

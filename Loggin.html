@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/LogginStyile.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <header class="header">
+        <div class="image">
+            <a href="index.html"><img src="src/SegundaPag/Aula.PNG" alt="AULA VIRTUAL"></a>
+        </div>
+        <p style="color: white;">You are not logged in.</p>
+    </header>
+    <div class="colors" id="naranja"></div>
+    <div class="colors" id="rojo"></div>
+    <br>
+
+    <div id="ContForm">
+
+        <div>
+            <form action="" class="form">
+                <label for="nombre">Username </label>
+                <input type="text" name="nombre"> <label for="nombre">@edu.uaa.mx</label><br><br>
+                <label for="contra">Contraseña</label>
+                <input type="password"><br><br>
+                <input type="checkbox" name="check" id="check">Recordar Usuario  <br><br>
+               <a href="Aula_Virtual.html"><img src="src/SegundaPag/btnEntrar.PNG" alt="" class="animate__heartBeat"></a>
+            </form>
+        </div>
+
+        <div class="contenedor">
+            <article>
+                <button id="btn-abrir-popup" class="btn-abrir-popup">Contraseña Olvidada</button>
+            </article>
+            <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h3>¿Olvidaste tu contraseña?</h3>
+                    <form action="">
+                        <div class="contenedor-inputs">
+                            <input type="email" placeholder="Username">
+                            <input type="password" name="contraseña" placeholder="Ultima contraseña">
+                        </div>
+                        <input type="submit" class="btn-submit" value="Verificar">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="aud">
+            <audio src="media/steve lacy _dark red .mp3.mp3" controls></audio>
+        </div>
+    </div>
+
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
